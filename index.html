@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Quiz" content="educational">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="images/quizIcon.png" type="image/icon type">
+    <title>Geography Quiz</title>
+</head>
+<body>
+    <div id="bg-image">
+        <div class="start-quiz">
+            <h1 class="starttitle">Test your Geography knowledge</h1>
+            <p class="instruction">Get ready for the most interesting geography quiz you'll ever do! you have to answer 10 questions :P </p>
+            <button class="start-button">Start Quiz</button>
+       </div>
+        <div class="start-quiz-questions" id="start-quiz-questions">
+            <p class="questionNumber" id="questionNumber">1 of 10</p>
+            <div class="questions" id="questions">What African country has the largest population?</div>
+                <label class="option"><input type="radio" name="option" value="1"/><span id="option1"></span></label>
+                <label class="option"><input type="radio" name="option" value="2"/><span id="option2"></span></label>
+                <label class="option"><input type="radio" name="option" value="3"/><span id="option3"></span></label>
+                <label class="option"><input type="radio" name="option" value="4"/><span id="option4"></span></label>
+                <button id="nextbtn" class="nextbtn" onclick="loadNextQuestion ()">Next Question</button>
+        </div>
+
+        <div class="result" id="result">Your Score is 10</div>
+        <button class="restart" id="restart" onclick="restartQuiz()">Restart</button>
+        </div>
+        <div class="footer">
+            <div class="copyright">Copyright ©2020 All rights reserved | This test Quiz is made by QishMish</div>
+        </div>
+    </div>
+<script src="quizQuestions.js"></script>
+<script src="quiz.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+</html>
